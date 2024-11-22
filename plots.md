@@ -10,7 +10,7 @@ import pandas as pd
 import polars as pl
 import numpy as np
 from sklearn.datasets import make_blobs
-  from FastKmedoids.data import outlier_contamination
+from FastKmedoids.data import outlier_contamination
 from FastKmedoids.models import FastKmedoidsGGower
 from FastKmedoids.metrics import adjusted_accuracy
 from PyDistances.mixed import FastGGowerDistMatrix
