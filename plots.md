@@ -8,16 +8,9 @@
 ```python
 import pandas as pd
 import polars as pl
-from sklearn.datasets import make_blobs
-from FastKmedoids.data import outlier_contamination
-from sklearn.manifold import MDS
-import seaborn as sns
-sns.set_style('whitegrid')import time
 import numpy as np
-import pandas as pd
-import polars as pl
 from sklearn.datasets import make_blobs
-from FastKmedoids.data import outlier_contamination
+  from FastKmedoids.data import outlier_contamination
 from FastKmedoids.models import FastKmedoidsGGower
 from FastKmedoids.metrics import adjusted_accuracy
 from PyDistances.mixed import FastGGowerDistMatrix
@@ -26,8 +19,6 @@ import seaborn as sns
 sns.set_style('whitegrid')
 from sklearn.mixture import GaussianMixture
 from sklearn.cluster import KMeans
-from BigEDA.descriptive import outliers_table
-from BigEDA.plots import boxplot_matrix
 ```
 ```python
 X, Y = make_blobs(n_samples=35000, centers=4, cluster_std=[2,2,2,3], n_features=8, random_state=123)

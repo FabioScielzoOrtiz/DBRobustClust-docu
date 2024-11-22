@@ -7,6 +7,14 @@
 ### Example
 
 ```python
+import pandas as pd
+import polars as pl
+from sklearn.datasets import make_blobs
+from FastKmedoids.data import outlier_contamination
+from BigEDA.descriptive import outliers_table
+from BigEDA.plots import boxplot_matrix
+```
+```python
 X, Y = make_blobs(n_samples=35000, centers=4, cluster_std=[2,2,2,3], n_features=8, random_state=123)
 X = pd.DataFrame(X)      
 X.columns = [f"X{i}" for i in range(1, X.shape[1]+1)]
