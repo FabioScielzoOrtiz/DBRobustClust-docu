@@ -18,7 +18,7 @@ Since 2010 he has led several national research projects and collaborated in sev
 
 ![My Local Image](images/aurea.jpg "Example Image")
 
-```{image} ../images/aurea.jpg
+```{image} images/aurea.jpg
 :alt: fishy
 :class: bg-primary mb-1
 :width: 50px
