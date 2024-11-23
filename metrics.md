@@ -2,7 +2,19 @@
 
 ## `adjusted_accuracy`
 
+```
+Computes the adjusted accuracy as the maximum accuracy  of the ones obtained for all the possible permutations of the cluster labels (`y_pred`).
 
+Parameters (inputs)
+----------
+y_pred: a numpy array with the predictions of the response.
+y_true: a numpy array with the true values of the response.
+
+Returns (outputs)
+-------
+best_accuracy: the value of the best accuracy.
+best_cluster_labels: the clusters labels associated to the best accuracy.
+```
 
 
 ### Example 

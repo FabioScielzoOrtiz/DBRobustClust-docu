@@ -5,7 +5,8 @@ format: jb-book
 root: intro
 chapters:
 - file: modules
-- file: models
-- file: metrics
-- file: plots
-- file: data
+  sections:
+  - file: models
+  - file: metrics
+  - file: plots
+  - file: data
