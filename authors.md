@@ -16,9 +16,14 @@ Since 2010 he has led several national research projects and collaborated in sev
 - Linkedin: https://www.linkedin.com/in/aurea-gran%C3%A9-11a026b9/
 
 
-<img src="images/aurea.jpg" alt="Example Image" title="Example Image" width="200">
+![My Local Image](images/aurea.jpg "Example Image")
 
-
+```{image} ../images/aurea.jpg
+:alt: fishy
+:class: bg-primary mb-1
+:width: 50px
+:align: center
+```
 ## Fabio Scielzo-Ortiz 
 
 
