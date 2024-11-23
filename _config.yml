@@ -3,7 +3,7 @@
 
 title: FastKmedoids
 author: Fabio Scielzo Ortiz
-logo: fastkmedoids_logo.jpg
+logo: images/fastkmedoids_logo.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
