@@ -2,7 +2,7 @@
 
 ## Aurea Grané
 
-Aurea Grané is Professor (Catedrática) of Statistics and Operations Research at Universidad Carlos III de Madrid. She holds a PhD in Mathematics from the University of Barcelona.
+Aurea Grané is Full Professor of Statistics and Operations Research at Universidad Carlos III de Madrid. She holds a PhD in Mathematics from the University of Barcelona.
 
 Her scientific contributions are framed in four main lines of research whose common link is the development of non-parametric techniques based on distances with application to data of certain complexity. Thus, Professor Grané has made important contributions in the development of goodness-of-fit statistics for uniformity, exponential and normality tests, in distance-based statistical methods for data visualization, in predictive methods for functional data and in the development of tools for the detection of outliers in long financial series and in mixed data sets.
 
