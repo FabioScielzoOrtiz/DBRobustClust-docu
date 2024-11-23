@@ -14,6 +14,10 @@ Since 2010 he has led several national research projects and collaborated in sev
 - Email: agrane@est-econ.uc3m.es
 - Linkedin: https://www.linkedin.com/in/aurea-gran%C3%A9-11a026b9/
 
+
+![My Local Image](images/aurea.jpg "Example Image")
+
+
 ## Fabio Scielzo-Ortiz 
 
 
@@ -23,3 +27,4 @@ Fabio Scielzo-Ortiz holds a degree in Statistics and Business and a Master in Bi
 - Linkedin: https://www.linkedin.com/in/fabio-scielzo-ortiz-00b206211/
 - GitHub: https://github.com/FabioScielzoOrtiz?tab=repositories
 
+![My Local Image](images/fabio.jpg "Example Image")
