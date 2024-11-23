@@ -12,8 +12,8 @@ y_true: a numpy array with the true values of the response.
 
 Returns (outputs)
 -------
-best_accuracy: the value of the best accuracy.
-best_cluster_labels: the clusters labels associated to the best accuracy.
+adj_accuracy: the value of the best accuracy.
+adj_cluster_labels: the clusters labels associated to the best accuracy.
 ```
 
 
