@@ -63,7 +63,7 @@ X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix. 
 
 y: a pandas/polars series or a numpy array. Represents a response variable. Is not required.
 
-weights: the sample weights, if exists.
+weights: the sample weights. Only used if provided and d1 = 'robust_mahalanobis'.  
 
 ---------------
 Predict method:
@@ -209,7 +209,7 @@ X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix. 
 
 y: a pandas/polars series or a numpy array. Represents a response variable. Is not required.
 
-weights: the sample weights, if exists.
+weights: the sample weights. Only used if provided and d1 = 'robust_mahalanobis'.  
 
 ---------------
 Predict method:
