@@ -12,6 +12,7 @@ Since 2010 he has led several national research projects and collaborated in sev
 
 
 - Email: agrane@est-econ.uc3m.es
+- Personal webpage: https://halweb.uc3m.es/esp/Personal/personas/agrane/esp/cv.html
 - Linkedin: https://www.linkedin.com/in/aurea-gran%C3%A9-11a026b9/
 
 
@@ -24,7 +25,9 @@ Since 2010 he has led several national research projects and collaborated in sev
 Fabio Scielzo-Ortiz holds a degree in Statistics and Business and a Master in Big Data Analytics from Universidad Carlos III de Madrid. He is currently a PhD student in Statistics for Data Science at the same university and works as a Data Scientist at the UC3M-Santander Big Data Institute (IBiDat). His main interest is to contribute to the resolution of real problems through Data Science, understood as a multidisciplinary field.
 
 - Email: fscielzo@pa.uc3m.es
+- Personal webpage: https://fabioscielzoortiz.com/
 - Linkedin: https://www.linkedin.com/in/fabio-scielzo-ortiz-00b206211/
 - GitHub: https://github.com/FabioScielzoOrtiz?tab=repositories
+
 
 ![My Local Image](images/fabio.jpg "Example Image")
