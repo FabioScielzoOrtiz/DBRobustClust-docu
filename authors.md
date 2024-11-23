@@ -16,14 +16,13 @@ Since 2010 he has led several national research projects and collaborated in sev
 - Linkedin: https://www.linkedin.com/in/aurea-gran%C3%A9-11a026b9/
 
 
-![My Local Image](images/aurea.jpg "Example Image")
-
 ```{image} images/aurea.jpg
-:alt: fishy
+:alt: aurea
 :class: bg-primary mb-1
-:width: 50px
+:width: 200px
 :align: center
 ```
+
 ## Fabio Scielzo-Ortiz 
 
 
@@ -35,4 +34,9 @@ Fabio Scielzo-Ortiz holds a degree in Statistics and Business and a Master in Bi
 - GitHub: https://github.com/FabioScielzoOrtiz?tab=repositories
 
 
-![My Local Image](images/fabio.jpg "Example Image")
+```{image} images/fabio.jpg
+:alt: fabio
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
