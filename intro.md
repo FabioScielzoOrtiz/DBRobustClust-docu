@@ -1,11 +1,19 @@
-# Welcome to your Jupyter Book
+# `FastKmedoids`
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+In the era of big data, data scientists are trying to solve real-world problems using multivariate
+and heterogeneous datasets, i.e., datasets where for each unit multiple variables of different
+nature are observed. Clustering may be a challenging problem when data are of mixed-type and
+present an underlying correlation structure and outlying units.
 
-Check out the content pages bundled with this sample book to see more.
+In the paper ***Grané, A., Scielzo-Ortiz, F.: Fast k-medoids and q-Fold Fast k-medoids: New distance-based clustering algorithms for large mixed-type data, Submitted to Journal of Classification (2024)***, new efficient clustering algorithms able to deal with big data are developed and implemented in a new Python package, called `FastKmedoids`, hosted in the official PyPI page https://pypi.org/project/FastKmedoids/. 
+
+Their performance is analyzed in rather complex
+mixed-type datasets, whose size go from 35k to 1M, with outlier contamination and different
+patterns of underlying correlation structure. The simulation study comprises four computational
+experiments, where the stability, accuracy and efficiency of the new algorithms is tested and
+compared to existing clustering alternatives. Adjusted accuracy and adjusted rand index are
+used to evaluate the goodness of the partitions, and Multidimensional Scaling (MDS)
+configurations are given to visualize clustering results.
 
 ```{tableofcontents}
 ```

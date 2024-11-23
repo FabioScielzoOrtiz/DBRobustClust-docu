@@ -4,7 +4,8 @@
 
 ### General requirements 
 
-```
+```python
+# Development Python Version: 3.12.0
 FastKmedoids==0.0.39
 PyDistances==0.0.35
 polars
@@ -21,7 +22,7 @@ seaborn
 
 ### `models` requirements
 
-```
+```python
 PyDistances
 polars
 pandas
@@ -35,14 +36,14 @@ seaborn
 
 ### `metrics` requirements 
 
-```
+```python
 numpy
 ```
 
 
 ### `plots` requirements
 
-```
+```python
 polars 
 numpy
 matplotlib
@@ -51,7 +52,7 @@ seaborn
 
 ### `data` requirements
 
-```
+```python
 polars
 numpy
 PyMachineLearning
