@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- quick_start
+- file: quick_start
 - file: modules
   sections:
   - file: models
