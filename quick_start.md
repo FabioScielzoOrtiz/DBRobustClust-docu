@@ -6,8 +6,8 @@
 
 ```python
 # Development Python Version: 3.12.0
-FastKmedoids==0.0.39
-PyDistances==0.0.35
+FastKmedoids
+PyDistances
 polars
 pandas
 numpy<=1.26.4
