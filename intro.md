@@ -5,7 +5,7 @@ and heterogeneous datasets, i.e., datasets where for each unit multiple variable
 nature are observed. Clustering may be a challenging problem when data are of mixed-type and
 present an underlying correlation structure and outlying units.
 
-In the paper ***Grané, A., Scielzo-Ortiz, F.: Fast k-medoids and q-Fold Fast k-medoids: New distance-based clustering algorithms for large mixed-type data, Submitted to Journal of Classification (2024)***, new efficient clustering algorithms able to deal with big data are developed and implemented in a new Python package, called `FastKmedoids`, hosted in the official PyPI page https://pypi.org/project/FastKmedoids/. 
+In the paper ***Grané, A., Scielzo-Ortiz, F.: Fast k-medoids and q-Fold Fast k-medoids: New distance-based clustering algorithms for large mixed-type data, Submitted to Journal of Classification (2024)***, new efficient clustering algorithms able to deal with big data are developed and implemented in a **new Python package**, called `FastKmedoids`, hosted in the official PyPI page https://pypi.org/project/FastKmedoids/. 
 
 Their performance is analyzed in rather complex
 mixed-type datasets, whose size go from 35k to 1M, with outlier contamination and different
