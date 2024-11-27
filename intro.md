@@ -15,5 +15,7 @@ compared to existing clustering alternatives. Adjusted accuracy and adjusted ran
 used to evaluate the goodness of the partitions, and Multidimensional Scaling (MDS)
 configurations are given to visualize clustering results.
 
+The package is located in Python Package Index (PyPI), the standard repository of packages for the Python programming language: https://pypi.org/project/FastKmedoids/
+
 ```{tableofcontents}
 ```
