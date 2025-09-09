@@ -59,7 +59,7 @@ Fits the fast k-medoids algorithm to `X`, and `y`, if needed.
 Parameters: (inputs)
 -----------
 
-X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix. Is required.
+X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix and is required. The first p1 predictors must be the quantitative, followed by the p2 binary predictors, and finally the p3 multiclass predictors.
 
 y: a pandas/polars series or a numpy array. Represents a response variable. Is not required.
 
@@ -74,7 +74,7 @@ Predicts clusters for `X` observation by assigning them to their nearest cluster
 Parameters: (inputs)
 -----------
 
-X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix. Is required.
+X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix and is required. The first p1 predictors must be the quantitative, followed by the p2 binary predictors, and finally the p3 multiclass predictors.
 
 Returns: (outputs)
 --------
@@ -205,7 +205,7 @@ Fits the fast k-medoids algorithm to `X` (and `y` if needed).
 Parameters: (inputs)
 -----------
 
-X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix. Is required.
+X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix and is required. The first p1 predictors must be the quantitative, followed by the p2 binary predictors, and finally the p3 multiclass predictors.
 
 y: a pandas/polars series or a numpy array. Represents a response variable. Is not required.
 
@@ -220,7 +220,7 @@ Predicts clusters for `X` observation by assigning them to their nearest cluster
 Parameters: (inputs)
 -----------
 
-X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix. Is required.
+X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix and is required. The first p1 predictors must be the quantitative, followed by the p2 binary predictors, and finally the p3 multiclass predictors.
 ```
 
 ### Example
