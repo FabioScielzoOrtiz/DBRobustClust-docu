@@ -153,8 +153,8 @@
       
     
     
-    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="DBRobustClust - Home"/>
-    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="DBRobustClust - Home"/>`);</script>
+    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="DBRobustClust- Home"/>
+    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="DBRobustClust- Home"/>`);</script>
   
   
 </a></div>
@@ -175,7 +175,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    DBRobustClust 
+                    DBRobustClust
                 </a>
             </li>
         </ul>
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust -package" target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust-package" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust -package/issues/new?title=Issue%20on%20page%20%2Fplots.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust-package/issues/new?title=Issue%20on%20page%20%2Fplots.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -556,15 +556,15 @@ document.write(`
 <span class="n">adj_accuracy_kmeans</span><span class="p">,</span> <span class="n">adj_cluster_labels_kmeans</span> <span class="o">=</span> <span class="n">adjusted_accuracy</span><span class="p">(</span><span class="n">y_pred</span><span class="o">=</span><span class="n">cluster_labels_kmeans</span><span class="p">,</span> <span class="n">y_true</span><span class="o">=</span><span class="n">Y</span><span class="p">)</span>
 <span class="n">adj_accuracy_gmm</span><span class="p">,</span> <span class="n">adj_cluster_labels_gmm</span> <span class="o">=</span> <span class="n">adjusted_accuracy</span><span class="p">(</span><span class="n">y_pred</span><span class="o">=</span><span class="n">cluster_labels_gmm</span><span class="p">,</span> <span class="n">y_true</span><span class="o">=</span><span class="n">Y</span><span class="p">)</span>
 
-<span class="n">y_pred_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust -RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_fast_kmedoids</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
+<span class="n">y_pred_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_fast_kmedoids</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
                <span class="s1">&#39;Kmeans&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_kmeans</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
                <span class="s1">&#39;GMM&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_gmm</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">]}</span>
 
-<span class="n">accuracy_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust -RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_fast_kmedoids</span><span class="p">,</span>
+<span class="n">accuracy_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_fast_kmedoids</span><span class="p">,</span>
                  <span class="s1">&#39;Kmeans&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_kmeans</span><span class="p">,</span>
                  <span class="s1">&#39;GMM&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_gmm</span><span class="p">}</span>
 
-<span class="n">time_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust -RobustGGower&#39;</span><span class="p">:</span> <span class="n">time_fast_kmedoids</span><span class="p">,</span>
+<span class="n">time_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">time_fast_kmedoids</span><span class="p">,</span>
              <span class="s1">&#39;Kmeans&#39;</span><span class="p">:</span> <span class="n">time_kmeans</span><span class="p">,</span>
              <span class="s1">&#39;GMM&#39;</span><span class="p">:</span> <span class="n">time_gmm</span><span class="p">}</span>
 </pre></div>

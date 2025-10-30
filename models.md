@@ -88,9 +88,9 @@ predicted_clusters: the predicted clusters of each observation of `X`.
 
 ```python
 import pandas as pd
-from DBRobustClust .models import FastKmedoidsGGower
+from DBRobustClust.models import FastKmedoidsGGower
 
-data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust -demo/refs/heads/main/data/madrid_houses_processed.csv"
+data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust-demo/refs/heads/main/data/madrid_houses_processed.csv"
 
 quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 binary_cols = ['is_renewal_needed', 'has_lift', 'is_exterior', 'has_parking']
@@ -231,9 +231,9 @@ The first p1 predictors must be the quantitative, followed by the p2 binary pred
 
 ```python
 import pandas as pd
-from DBRobustClust .models import FoldFastKmedoidsGGower
+from DBRobustClust.models import FoldFastKmedoidsGGower
 
-data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust -demo/refs/heads/main/data/madrid_houses_processed.csv"
+data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust-demo/refs/heads/main/data/madrid_houses_processed.csv"
 
 quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 binary_cols = ['is_renewal_needed', 'has_lift', 'is_exterior', 'has_parking']
