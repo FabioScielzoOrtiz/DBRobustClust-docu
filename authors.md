@@ -31,10 +31,10 @@ Fabio Scielzo-Ortiz holds a degree in Statistics and Business and a Master in Bi
 - Email: fscielzo@pa.uc3m.es
 - Personal webpage: https://fabioscielzoortiz.com/
 - Linkedin: https://www.linkedin.com/in/fabio-scielzo-ortiz-00b206211/
-- GitHub: https://github.com/FabioScielzoOrtiz?tab=repositories
+- GitHub: https://github.com/FabioScielzoOrtiz
 
 
-```{image} images/fabio.jpg
+```{image} images/fabio.png
 :alt: fabio
 :class: bg-primary mb-1
 :width: 200px
