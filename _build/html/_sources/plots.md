@@ -34,9 +34,9 @@ import pandas as pd
 import polars as pl
 import numpy as np
 from sklearn.datasets import make_blobs
-from DBRobustClust.data import outlier_contamination
-from DBRobustClust.models import FastKmedoidsGGower
-from DBRobustClust.metrics import adjusted_accuracy
+from db_robust_clust.data import outlier_contamination
+from db_robust_clust.models import FastKmedoidsGGower
+from db_robust_clust.metrics import adjusted_accuracy
 from PyDistances.mixed import FastGGowerDistMatrix
 from sklearn.manifold import MDS
 import seaborn as sns
@@ -82,7 +82,7 @@ cluster_labels_fast_kmedoids = fast_kmedoids.labels_
 time_fast_kmedoids = time.time() - start_time               
 ```
 ```python
-from DBRobustClust.plots import clustering_MDS_plot_one_method
+from db_robust_clust.plots import clustering_MDS_plot_one_method
 
 clustering_MDS_plot_one_method(X_mds=X_mds, y_pred=cluster_labels_fast_kmedoids[fastGGower.sample_index], 
                                y_true=None, title="MDS visualization of clustering results", 
@@ -158,20 +158,20 @@ time_gmm = time.time() - start_time
 adj_accuracy_kmeans, adj_cluster_labels_kmeans = adjusted_accuracy(y_pred=cluster_labels_kmeans, y_true=Y)
 adj_accuracy_gmm, adj_cluster_labels_gmm = adjusted_accuracy(y_pred=cluster_labels_gmm, y_true=Y)
 
-y_pred_dict = {'DBRobustClust-RobustGGower': adj_cluster_labels_fast_kmedoids[fastGGower.sample_index],
+y_pred_dict = {'db_robust_clust-RobustGGower': adj_cluster_labels_fast_kmedoids[fastGGower.sample_index],
                'Kmeans': adj_cluster_labels_kmeans[fastGGower.sample_index],
                'GMM': adj_cluster_labels_gmm[fastGGower.sample_index]}
 
-accuracy_dict = {'DBRobustClust-RobustGGower': adj_accuracy_fast_kmedoids,
+accuracy_dict = {'db_robust_clust-RobustGGower': adj_accuracy_fast_kmedoids,
                  'Kmeans': adj_accuracy_kmeans,
                  'GMM': adj_accuracy_gmm}
 
-time_dict = {'DBRobustClust-RobustGGower': time_fast_kmedoids,
+time_dict = {'db_robust_clust-RobustGGower': time_fast_kmedoids,
              'Kmeans': time_kmeans,
              'GMM': time_gmm}
 ```
 ```python
-from DBRobustClust.plots import clustering_MDS_plot_multiple_methods
+from db_robust_clust.plots import clustering_MDS_plot_multiple_methods
 
 clustering_MDS_plot_multiple_methods(X_mds=X_mds, y_pred=y_pred_dict, 
                                      y_true=Y[fastGGower.sample_index],

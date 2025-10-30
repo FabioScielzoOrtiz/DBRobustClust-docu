@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>models &#8212; DBRobustClust</title>
+    <title>models &#8212; db_robust_clust</title>
   
   
   
@@ -153,8 +153,8 @@
       
     
     
-    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="DBRobustClust- Home"/>
-    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="DBRobustClust- Home"/>`);</script>
+    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="db_robust_clust- Home"/>
+    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="db_robust_clust- Home"/>`);</script>
   
   
 </a></div>
@@ -175,7 +175,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    DBRobustClust
+                    db_robust_clust
                 </a>
             </li>
         </ul>
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust-package" target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust-package/issues/new?title=Issue%20on%20page%20%2Fmodels.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package/issues/new?title=Issue%20on%20page%20%2Fmodels.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -491,9 +491,9 @@ predicted_clusters: the predicted clusters of each observation of `X`.
 <section id="example">
 <h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FastKmedoidsGGower</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FastKmedoidsGGower</span>
 
-<span class="n">data_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust-demo/refs/heads/main/data/madrid_houses_processed.csv&quot;</span>
+<span class="n">data_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/FabioScielzoOrtiz/db_robust_clust-demo/refs/heads/main/data/madrid_houses_processed.csv&quot;</span>
 
 <span class="n">quant_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sq_mt_built&#39;</span><span class="p">,</span> <span class="s1">&#39;n_rooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_bathrooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_floors&#39;</span><span class="p">,</span> <span class="s1">&#39;buy_price&#39;</span><span class="p">]</span>
 <span class="n">binary_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;is_renewal_needed&#39;</span><span class="p">,</span> <span class="s1">&#39;has_lift&#39;</span><span class="p">,</span> <span class="s1">&#39;is_exterior&#39;</span><span class="p">,</span> <span class="s1">&#39;has_parking&#39;</span><span class="p">]</span>
@@ -631,9 +631,9 @@ The first p1 predictors must be the quantitative, followed by the p2 binary pred
 <section id="id1">
 <h3>Example<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FoldFastKmedoidsGGower</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FoldFastKmedoidsGGower</span>
 
-<span class="n">data_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust-demo/refs/heads/main/data/madrid_houses_processed.csv&quot;</span>
+<span class="n">data_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/FabioScielzoOrtiz/db_robust_clust-demo/refs/heads/main/data/madrid_houses_processed.csv&quot;</span>
 
 <span class="n">quant_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sq_mt_built&#39;</span><span class="p">,</span> <span class="s1">&#39;n_rooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_bathrooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_floors&#39;</span><span class="p">,</span> <span class="s1">&#39;buy_price&#39;</span><span class="p">]</span>
 <span class="n">binary_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;is_renewal_needed&#39;</span><span class="p">,</span> <span class="s1">&#39;has_lift&#39;</span><span class="p">,</span> <span class="s1">&#39;is_exterior&#39;</span><span class="p">,</span> <span class="s1">&#39;has_parking&#39;</span><span class="p">]</span>

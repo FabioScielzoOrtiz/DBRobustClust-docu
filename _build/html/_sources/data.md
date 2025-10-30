@@ -28,7 +28,7 @@ outlier_idx_above: the index of the above outliers.
 import pandas as pd
 import polars as pl
 from sklearn.datasets import make_blobs
-from DBRobustClust.data import outlier_contamination
+from db_robust_clust.data import outlier_contamination
 from BigEDA.descriptive import outliers_table
 from BigEDA.plots import boxplot_matrix
 ```

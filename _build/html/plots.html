@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>plots &#8212; DBRobustClust</title>
+    <title>plots &#8212; db_robust_clust</title>
   
   
   
@@ -153,8 +153,8 @@
       
     
     
-    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="DBRobustClust- Home"/>
-    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="DBRobustClust- Home"/>`);</script>
+    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="db_robust_clust- Home"/>
+    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="db_robust_clust- Home"/>`);</script>
   
   
 </a></div>
@@ -175,7 +175,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    DBRobustClust
+                    db_robust_clust
                 </a>
             </li>
         </ul>
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust-package" target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/DBRobustClust-package/issues/new?title=Issue%20on%20page%20%2Fplots.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package/issues/new?title=Issue%20on%20page%20%2Fplots.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -437,9 +437,9 @@ document.write(`
 <span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_blobs</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">data</span> <span class="kn">import</span><span class="w"> </span><span class="nn">outlier_contamination</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FastKmedoidsGGower</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">metrics</span> <span class="kn">import</span><span class="w"> </span><span class="nn">adjusted_accuracy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">data</span> <span class="kn">import</span><span class="w"> </span><span class="nn">outlier_contamination</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FastKmedoidsGGower</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">metrics</span> <span class="kn">import</span><span class="w"> </span><span class="nn">adjusted_accuracy</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">PyDistances.mixed</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastGGowerDistMatrix</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.manifold</span><span class="w"> </span><span class="kn">import</span> <span class="n">MDS</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
@@ -484,7 +484,7 @@ document.write(`
 <span class="n">time_fast_kmedoids</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>               
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">plots</span> <span class="kn">import</span><span class="w"> </span><span class="nn">clustering_MDS_plot_one_method</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">plots</span> <span class="kn">import</span><span class="w"> </span><span class="nn">clustering_MDS_plot_one_method</span>
 
 <span class="n">clustering_MDS_plot_one_method</span><span class="p">(</span><span class="n">X_mds</span><span class="o">=</span><span class="n">X_mds</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">=</span><span class="n">cluster_labels_fast_kmedoids</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span> 
                                <span class="n">y_true</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;MDS visualization of clustering results&quot;</span><span class="p">,</span> 
@@ -556,20 +556,20 @@ document.write(`
 <span class="n">adj_accuracy_kmeans</span><span class="p">,</span> <span class="n">adj_cluster_labels_kmeans</span> <span class="o">=</span> <span class="n">adjusted_accuracy</span><span class="p">(</span><span class="n">y_pred</span><span class="o">=</span><span class="n">cluster_labels_kmeans</span><span class="p">,</span> <span class="n">y_true</span><span class="o">=</span><span class="n">Y</span><span class="p">)</span>
 <span class="n">adj_accuracy_gmm</span><span class="p">,</span> <span class="n">adj_cluster_labels_gmm</span> <span class="o">=</span> <span class="n">adjusted_accuracy</span><span class="p">(</span><span class="n">y_pred</span><span class="o">=</span><span class="n">cluster_labels_gmm</span><span class="p">,</span> <span class="n">y_true</span><span class="o">=</span><span class="n">Y</span><span class="p">)</span>
 
-<span class="n">y_pred_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_fast_kmedoids</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
+<span class="n">y_pred_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;db_robust_clust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_fast_kmedoids</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
                <span class="s1">&#39;Kmeans&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_kmeans</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
                <span class="s1">&#39;GMM&#39;</span><span class="p">:</span> <span class="n">adj_cluster_labels_gmm</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">]}</span>
 
-<span class="n">accuracy_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_fast_kmedoids</span><span class="p">,</span>
+<span class="n">accuracy_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;db_robust_clust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_fast_kmedoids</span><span class="p">,</span>
                  <span class="s1">&#39;Kmeans&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_kmeans</span><span class="p">,</span>
                  <span class="s1">&#39;GMM&#39;</span><span class="p">:</span> <span class="n">adj_accuracy_gmm</span><span class="p">}</span>
 
-<span class="n">time_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;DBRobustClust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">time_fast_kmedoids</span><span class="p">,</span>
+<span class="n">time_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;db_robust_clust-RobustGGower&#39;</span><span class="p">:</span> <span class="n">time_fast_kmedoids</span><span class="p">,</span>
              <span class="s1">&#39;Kmeans&#39;</span><span class="p">:</span> <span class="n">time_kmeans</span><span class="p">,</span>
              <span class="s1">&#39;GMM&#39;</span><span class="p">:</span> <span class="n">time_gmm</span><span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DBRobustClust</span> <span class="o">.</span><span class="n">plots</span> <span class="kn">import</span><span class="w"> </span><span class="nn">clustering_MDS_plot_multiple_methods</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">plots</span> <span class="kn">import</span><span class="w"> </span><span class="nn">clustering_MDS_plot_multiple_methods</span>
 
 <span class="n">clustering_MDS_plot_multiple_methods</span><span class="p">(</span><span class="n">X_mds</span><span class="o">=</span><span class="n">X_mds</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">=</span><span class="n">y_pred_dict</span><span class="p">,</span> 
                                      <span class="n">y_true</span><span class="o">=</span><span class="n">Y</span><span class="p">[</span><span class="n">fastGGower</span><span class="o">.</span><span class="n">sample_index</span><span class="p">],</span>
