@@ -6,7 +6,7 @@
 
 ```python
 # Development Python Version: 3.12.0
-FastKmedoids
+DBRobustClust 
 PyDistances
 polars
 pandas
@@ -63,10 +63,10 @@ scikit-learn
 ## Installation
 
 ```python
-pip install FastKmedoids
+pip install DBRobustClust 
 ```
 
-To see the available versions of the package go to the release history at PyPi: https://pypi.org/project/FastKmedoids/#history
+To see the available versions of the package go to the release history at PyPi: https://pypi.org/project/DBRobustClust /#history
 
 
 ## Example
@@ -74,9 +74,9 @@ To see the available versions of the package go to the release history at PyPi: 
 ```python
 
 import pandas as pd
-from FastKmedoids.models import FoldFastKmedoidsGGower
+from DBRobustClust .models import FoldFastKmedoidsGGower
 
-data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/FastKmedoids-demo/refs/heads/main/data/madrid_houses_processed.csv"
+data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/DBRobustClust -demo/refs/heads/main/data/madrid_houses_processed.csv"
 
 quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 binary_cols = ['is_renewal_needed', 'has_lift', 'is_exterior', 'has_parking']
