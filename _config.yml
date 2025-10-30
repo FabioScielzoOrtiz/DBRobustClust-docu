@@ -3,7 +3,7 @@
 
 title: DBRobustClust
 author: Fabio Scielzo Ortiz
-logo: images/fastkmedoids_logo.jpg
+logo: images/logo_DBRobustClust.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
