@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: db_robust_clust
+title: db_robust_clust documentation
 author: Fabio Scielzo Ortiz
 logo: images/logo_DBRobustClust.jpg
 

@@ -1,2 +1,2 @@
 jupyter-book
-db_robust_clust==0.1.0
+db-robust-clust==0.1.2
