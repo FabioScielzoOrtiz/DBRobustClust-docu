@@ -3,7 +3,7 @@
 
 title: documentation
 author: Fabio Scielzo Ortiz
-logo: images/logo_DBRobustClust.jpg
+logo: images/db_robust_clust_logo.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
