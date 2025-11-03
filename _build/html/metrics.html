@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>metrics &#8212; db_robust_clust</title>
+    <title>metrics &#8212; documentation</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -153,8 +153,8 @@
       
     
     
-    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="db_robust_clust- Home"/>
-    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="db_robust_clust- Home"/>`);</script>
+    <img src="_static/db_robust_clust_logo.jpg" class="logo__image only-light" alt="documentation - Home"/>
+    <script>document.write(`<img src="_static/db_robust_clust_logo.jpg" class="logo__image only-dark" alt="documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -180,7 +180,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="modules.html">Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="models.html"><code class="docutils literal notranslate"><span class="pre">models</span></code></a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">metrics</span></code></a></li>
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package" target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-docu" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package/issues/new?title=Issue%20on%20page%20%2Fmetrics.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-docu/issues/new?title=Issue%20on%20page%20%2Fmetrics.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -384,10 +384,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusted-accuracy"><code class="docutils literal notranslate"><span class="pre">adjusted_accuracy</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusted-accuracy"><code class="docutils literal notranslate"><span class="pre">adjusted_accuracy</span></code></a></li>
 </ul>
             </nav>
         </div>
@@ -403,52 +400,26 @@ document.write(`
 <h1><code class="docutils literal notranslate"><span class="pre">metrics</span></code><a class="headerlink" href="#metrics" title="Link to this heading">#</a></h1>
 <section id="adjusted-accuracy">
 <h2><code class="docutils literal notranslate"><span class="pre">adjusted_accuracy</span></code><a class="headerlink" href="#adjusted-accuracy" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Computes the adjusted accuracy as the maximum accuracy  of the ones obtained for all the possible permutations of the cluster labels (`y_pred`).
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Computes the adjusted score (accuracy, balanced accuracy, etc.) as the maximum
+score obtained across all possible permutations of the cluster labels (`y_pred`).
 
-Parameters (inputs)
+Parameters
 ----------
-y_pred: a numpy array with the predictions of the response.
-y_true: a numpy array with the true values of the response.
+y_pred : numpy.ndarray
+    Predicted cluster labels.
+y_true : numpy.ndarray
+    True class labels.
+metric : callable, default=accuracy_score
+    Function to compute the metric. Must accept (y_true, y_pred) and return a float.
 
-Returns (outputs)
+Returns
 -------
-adj_accuracy: the value of the best accuracy.
-adj_cluster_labels: the clusters labels associated to the best accuracy.
+adj_score : float
+    The best score obtained across all permutations.
+adj_cluster_labels : numpy.ndarray
+    The cluster labels permuted according to the best permutation.
 </pre></div>
 </div>
-<section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fast_kmedoids</span> <span class="o">=</span> <span class="n">FastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">111</span><span class="p">,</span>
-                                   <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">p1</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
-                                   <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;robust_mahalanobis&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;jaccard&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                   <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> 
-
-<span class="n">cluster_labels_fast_kmedoids</span> <span class="o">=</span> <span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-
-<span class="n">adj_accuracy_fast_kmedoids</span><span class="p">,</span> <span class="n">adj_cluster_labels_fast_kmedoids</span> <span class="o">=</span> <span class="n">adjusted_accuracy</span><span class="p">(</span><span class="n">y_pred</span><span class="o">=</span><span class="n">cluster_labels_fast_kmedoids</span><span class="p">,</span> <span class="n">y_true</span><span class="o">=</span><span class="n">Y</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cluster_labels_fast_kmedoids</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int64</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">adj_cluster_labels_fast_kmedoids</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int64</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">adj_accuracy_fast_kmedoids</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">0.8741142857142857</span>
-</pre></div>
-</div>
-</section>
 </section>
 </section>
 
@@ -516,10 +487,7 @@ adj_cluster_labels: the clusters labels associated to the best accuracy.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusted-accuracy"><code class="docutils literal notranslate"><span class="pre">adjusted_accuracy</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusted-accuracy"><code class="docutils literal notranslate"><span class="pre">adjusted_accuracy</span></code></a></li>
 </ul>
   </nav></div>
 

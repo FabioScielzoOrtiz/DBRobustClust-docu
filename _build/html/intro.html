@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>db_robust_clust&#8212; db_robust_clust</title>
+    <title>db_robust_clust &#8212; documentation</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Quick start" href="quick_start.html" />
+    <link rel="next" title="Quick Start" href="quick_start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,8 +154,8 @@
       
     
     
-    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="db_robust_clust- Home"/>
-    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="db_robust_clust- Home"/>`);</script>
+    <img src="_static/db_robust_clust_logo.jpg" class="logo__image only-light" alt="documentation - Home"/>
+    <script>document.write(`<img src="_static/db_robust_clust_logo.jpg" class="logo__image only-dark" alt="documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -181,7 +181,7 @@
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="modules.html">Modules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="models.html"><code class="docutils literal notranslate"><span class="pre">models</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="metrics.html"><code class="docutils literal notranslate"><span class="pre">metrics</span></code></a></li>
@@ -244,7 +244,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package" target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-docu" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -261,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-docu/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -387,24 +387,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="db_robust_clust">
-<h1><code class="docutils literal notranslate"><span class="pre">db_robust_clust</span> </code><a class="headerlink" href="#db_robust_clust" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="db-robust-clust">
+<h1><code class="docutils literal notranslate"><span class="pre">db_robust_clust</span></code><a class="headerlink" href="#db-robust-clust" title="Link to this heading">#</a></h1>
 <p>In the era of big data, data scientists are trying to solve real-world problems using multivariate
 and heterogeneous datasets, i.e., datasets where for each unit multiple variables of different
 nature are observed. Clustering may be a challenging problem when data are of mixed-type and
 present an underlying correlation structure and outlying units.</p>
-<p>In the paper <em><strong>Grané, A., Scielzo-Ortiz, F.: Fast k-medoids and q-Fold Fast k-medoids: New distance-based clustering algorithms for large mixed-type data, Submitted to Journal of Classification (2024)</strong></em>, new efficient clustering algorithms able to deal with big data are developed and implemented in a <strong>new Python package</strong>, called <code class="docutils literal notranslate"><span class="pre">db_robust_clust</span> </code>, hosted in the official PyPI page <a class="reference external" href="https://pypi.org/project/db_robust_clust">https://pypi.org/project/db_robust_clust</a> /.</p>
-<p>Their performance is analyzed in rather complex
-mixed-type datasets, whose size go from 35k to 1M, with outlier contamination and different
-patterns of underlying correlation structure. The simulation study comprises four computational
-experiments, where the stability, accuracy and efficiency of the new algorithms is tested and
-compared to existing clustering alternatives. Adjusted accuracy and adjusted rand index are
-used to evaluate the goodness of the partitions, and Multidimensional Scaling (MDS)
-configurations are given to visualize clustering results.</p>
-<p>The package is located in Python Package Index (PyPI), the standard repository of packages for the Python programming language: <a class="reference external" href="https://pypi.org/project/db_robust_clust">https://pypi.org/project/db_robust_clust</a> /</p>
+<p>In the paper <em><strong>Grané, A., Scielzo-Ortiz, F.: New distance-based clustering algorithms for large mixed-type data, Submitted to Journal of Classification (2025)</strong></em>, new efficient robust clustering algorithms able to deal with large mixed-type data are developed and implemented in a <strong>new Python package</strong>, called <code class="docutils literal notranslate"><span class="pre">db_robust_clust</span></code>, hosted in the official PyPI page <a class="reference external" href="https://pypi.org/project/db_robust_clust/">https://pypi.org/project/db_robust_clust/</a>.</p>
+<p>Their performance is analyzed in rather complex mixed-type datasets,
+both synthetic and real, where a wide variety of scenarios is considered regarding
+size, the proportion of outlying units, the underlying correlation structure, and the
+cluster pattern. The simulation study comprises four computational experiments
+conducted on datasets of sizes ranging from 35k to 1M, in which the accuracy and
+efficiency of the new proposals are tested and compared to those of existing clus-
+tering alternatives. In addition, the goodness and computing time of the methods
+under evaluation are tested on real datasets of varying sizes and patterns. MDS is
+used to visualize clustering results.</p>
+<p>The package is located in Python Package Index (PyPI), the standard repository of packages for the Python programming language: <a class="reference external" href="https://pypi.org/project/db_robust_clust/">https://pypi.org/project/db_robust_clust/</a></p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
 </ul>
@@ -446,7 +448,7 @@ configurations are given to visualize clustering results.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quick start</p>
+        <p class="prev-next-title">Quick Start</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

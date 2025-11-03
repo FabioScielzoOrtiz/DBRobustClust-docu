@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>models &#8212; db_robust_clust</title>
+    <title>models &#8212; documentation</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -153,8 +153,8 @@
       
     
     
-    <img src="_static/fastkmedoids_logo.jpg" class="logo__image only-light" alt="db_robust_clust- Home"/>
-    <script>document.write(`<img src="_static/fastkmedoids_logo.jpg" class="logo__image only-dark" alt="db_robust_clust- Home"/>`);</script>
+    <img src="_static/db_robust_clust_logo.jpg" class="logo__image only-light" alt="documentation - Home"/>
+    <script>document.write(`<img src="_static/db_robust_clust_logo.jpg" class="logo__image only-dark" alt="documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -180,7 +180,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="modules.html">Modules</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">models</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="metrics.html"><code class="docutils literal notranslate"><span class="pre">metrics</span></code></a></li>
@@ -243,7 +243,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package" target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-docu" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-package/issues/new?title=Issue%20on%20page%20%2Fmodels.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FabioScielzoOrtiz/db_robust_clust-docu/issues/new?title=Issue%20on%20page%20%2Fmodels.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -384,14 +384,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FastKmedoidsGGower</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foldfastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FoldFastKmedoidsGGower</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FastKmedoidsGGower</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foldfastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FoldFastKmedoidsGGower</span></code></a></li>
 </ul>
             </nav>
         </div>
@@ -488,61 +482,6 @@ Returns: (outputs)
 predicted_clusters: the predicted clusters of each observation of `X`.
 </pre></div>
 </div>
-<section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FastKmedoidsGGower</span>
-
-<span class="n">data_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/FabioScielzoOrtiz/db_robust_clust-demo/refs/heads/main/data/madrid_houses_processed.csv&quot;</span>
-
-<span class="n">quant_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sq_mt_built&#39;</span><span class="p">,</span> <span class="s1">&#39;n_rooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_bathrooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_floors&#39;</span><span class="p">,</span> <span class="s1">&#39;buy_price&#39;</span><span class="p">]</span>
-<span class="n">binary_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;is_renewal_needed&#39;</span><span class="p">,</span> <span class="s1">&#39;has_lift&#39;</span><span class="p">,</span> <span class="s1">&#39;is_exterior&#39;</span><span class="p">,</span> <span class="s1">&#39;has_parking&#39;</span><span class="p">]</span>
-<span class="n">multiclass_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;energy_certificate&#39;</span><span class="p">,</span> <span class="s1">&#39;house_type&#39;</span><span class="p">]</span>
-
-<span class="n">p1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">quant_cols</span><span class="p">)</span>
-<span class="n">p2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">binary_cols</span><span class="p">)</span>
-<span class="n">p3</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">multiclass_cols</span><span class="p">)</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_url</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fast_kmedoids</span> <span class="o">=</span> <span class="n">FastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                   <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">p1</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
-                                   <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;robust_mahalanobis&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;jaccard&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                   <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">data_pd</span><span class="p">)</span> 
-
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int64</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fast_kmedoids</span> <span class="o">=</span> <span class="n">FastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                   <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">p1</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
-                                   <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;sokal&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                   <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">data_pd</span><span class="p">)</span> 
-
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int64</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fast_kmedoids</span> <span class="o">=</span> <span class="n">FastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                   <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">p1</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
-                                   <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;canberra&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;sokal&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                   <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">data_pd</span><span class="p">)</span> 
-
-<span class="n">fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int64</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
 </section>
 <section id="foldfastkmedoidsggower">
 <h2><code class="docutils literal notranslate"><span class="pre">FoldFastKmedoidsGGower</span></code><a class="headerlink" href="#foldfastkmedoidsggower" title="Link to this heading">#</a></h2>
@@ -628,64 +567,6 @@ X: a pandas/polars data-frame or a numpy array. Represents a predictors matrix a
 The first p1 predictors must be the quantitative, followed by the p2 binary predictors, and finally the p3 multiclass predictors.
 </pre></div>
 </div>
-<section id="id1">
-<h3>Example<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">db_robust_clust</span> <span class="o">.</span><span class="n">models</span> <span class="kn">import</span><span class="w"> </span><span class="nn">FoldFastKmedoidsGGower</span>
-
-<span class="n">data_url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/FabioScielzoOrtiz/db_robust_clust-demo/refs/heads/main/data/madrid_houses_processed.csv&quot;</span>
-
-<span class="n">quant_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sq_mt_built&#39;</span><span class="p">,</span> <span class="s1">&#39;n_rooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_bathrooms&#39;</span><span class="p">,</span> <span class="s1">&#39;n_floors&#39;</span><span class="p">,</span> <span class="s1">&#39;buy_price&#39;</span><span class="p">]</span>
-<span class="n">binary_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;is_renewal_needed&#39;</span><span class="p">,</span> <span class="s1">&#39;has_lift&#39;</span><span class="p">,</span> <span class="s1">&#39;is_exterior&#39;</span><span class="p">,</span> <span class="s1">&#39;has_parking&#39;</span><span class="p">]</span>
-<span class="n">multiclass_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;energy_certificate&#39;</span><span class="p">,</span> <span class="s1">&#39;house_type&#39;</span><span class="p">]</span>
-
-<span class="n">p1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">quant_cols</span><span class="p">)</span>
-<span class="n">p2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">binary_cols</span><span class="p">)</span>
-<span class="n">p3</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">multiclass_cols</span><span class="p">)</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_url</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">kfold_fast_kmedoids</span> <span class="o">=</span> <span class="n">FoldFastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                             <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">kfold_random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                             <span class="n">p1</span><span class="o">=</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="n">p3</span><span class="p">,</span> <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;robust_mahalanobis&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;jaccard&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                             <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-                                             <span class="n">fast_VG</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">VG_sample_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">VG_n_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">kfold_fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">data</span><span class="p">)</span> 
-
-<span class="n">kfold_fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">kfold_fast_kmedoids</span> <span class="o">=</span> <span class="n">FoldFastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                             <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">kfold_random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                             <span class="n">p1</span><span class="o">=</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="n">p3</span><span class="p">,</span> <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;sokal&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                             <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-                                             <span class="n">fast_VG</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">VG_sample_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">VG_n_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">kfold_fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">data_pd</span><span class="p">)</span>
-
-<span class="n">kfold_fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">kfold_fast_kmedoids</span> <span class="o">=</span> <span class="n">FoldFastKmedoidsGGower</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;pam&#39;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;heuristic&#39;</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                             <span class="n">frac_sample_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">kfold_random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
-                                             <span class="n">p1</span><span class="o">=</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="o">=</span><span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="o">=</span><span class="n">p3</span><span class="p">,</span> <span class="n">d1</span><span class="o">=</span><span class="s1">&#39;canberra&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s1">&#39;sokal&#39;</span><span class="p">,</span> <span class="n">d3</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span> 
-                                             <span class="n">robust_method</span><span class="o">=</span><span class="s1">&#39;trimmed&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iters</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-                                             <span class="n">fast_VG</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">VG_sample_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">VG_n_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">kfold_fast_kmedoids</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">data_pd</span><span class="p">)</span> 
-
-<span class="n">kfold_fast_kmedoids</span><span class="o">.</span><span class="n">labels_</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
-</pre></div>
-</div>
-</section>
 </section>
 </section>
 
@@ -753,14 +634,8 @@ The first p1 predictors must be the quantitative, followed by the p2 binary pred
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FastKmedoidsGGower</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foldfastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FoldFastKmedoidsGGower</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FastKmedoidsGGower</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foldfastkmedoidsggower"><code class="docutils literal notranslate"><span class="pre">FoldFastKmedoidsGGower</span></code></a></li>
 </ul>
   </nav></div>
 
